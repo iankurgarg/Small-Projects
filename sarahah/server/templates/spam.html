@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/spam.css') }}">
+</head>
+<body>
+<div class="container">  
+  <form id="contact" action="/spam" method="post">
+    <h3>Sarahah Spamming Portal</h3>
+    <fieldset>
+      <input placeholder="Sarahah Link" name='surl' type="url" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Number of Messages" name='ncount' type="number" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Special Message (optional)" name='msg' type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
